@@ -9,6 +9,25 @@ body {
 	padding-left: 2.275%;
 	padding-right: 2.275%;
 }
+
+
+.social-media-button img {
+	height: 72px;
+    filter: grayscale(100%); /* Make the image black and white */
+    transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+.social-media-button:hover img {
+    filter: none; /* Remove the filter on hover to show color */
+}
+
+
+.profilePhotoImage img {
+	width: 260px;
+	height: 260px;
+}
+
+
 /* Header */
 header {
 	text-align: center;
@@ -30,9 +49,9 @@ header .logoPlaceholder span {
 }
 header .profilePhoto {
 	background-color: rgba(237,237,237,1.00);
-	width: 259px;
+	width: 260px;
 	border-radius: 50%;
-	height: 259px;
+	height: 260px;
 	clear: both;
 }
 header .profileHeader h1 {
