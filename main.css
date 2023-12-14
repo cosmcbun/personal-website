@@ -1,0 +1,38 @@
+.hamburger-menu {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: 0.4s;
+}
+
+/* Styling for the navigation menu */
+#navbar {
+    display: none;
+    /* Add additional styling for your menu */
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    padding: 8px;
+    margin: 5px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Add additional styling for your links */
+}
+
+/* Add your own media queries and additional styling as needed */

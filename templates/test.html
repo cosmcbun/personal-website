@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josh Moore's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Add any additional head elements here -->
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <!-- Add other menu items here -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Josh Moore</h1>
+            <!-- Add about information here -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Dynamically list projects from GitHub here -->
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.style.display === "block") {
+            navbar.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+        }
+    }
+</script>
