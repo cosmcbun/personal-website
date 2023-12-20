@@ -28,20 +28,18 @@ header {
 }
 
 .project-bar {
-  /*   background-image: url('../images/compost project/dutch.JPG'); Replace with your image path */
     background-size: cover; /* Cover ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
     position: relative; /* Allows absolute positioning of elements inside */
     width: 100vw; /* Full width of the container */
     height: 500px; /* Adjust the height as needed */
-	
-	
-    filter: grayscale(90%); /* Make the image black and white */
-    transition: filter 0.3s ease; /* Smooth transition for the filter */
 }
 
 #compost {
     background-image: url('../images/compost project/dutch.JPG'); /* Replace with your image path */
+}
+#tpi {
+    background-image: url('../images/tpi project/clean.png'); /* Replace with your image path */
 }
 
 .project-info {
