@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Global Styles */
 
-body {
+header {
 	margin-left: auto;
 	margin-right: auto;
 	width: 92%;
@@ -13,7 +13,7 @@ body {
 
 .social-media-button img {
 	height: 72px;
-    filter: grayscale(100%); /* Make the image black and white */
+    filter: grayscale(40%); /* Make the image black and white */
     transition: filter 0.3s ease; /* Smooth transition for the filter */
 }
 
@@ -26,6 +26,36 @@ body {
 	width: 260px;
 	height: 260px;
 }
+
+.project-bar {
+  /*   background-image: url('../images/compost project/dutch.JPG'); Replace with your image path */
+    background-size: cover; /* Cover ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    position: relative; /* Allows absolute positioning of elements inside */
+    width: 100vw; /* Full width of the container */
+    height: 500px; /* Adjust the height as needed */
+	
+	
+    filter: grayscale(90%); /* Make the image black and white */
+    transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+#compost {
+    background-image: url('../images/compost project/dutch.JPG'); /* Replace with your image path */
+}
+
+.project-info {
+    position: absolute; /* Absolutely position the content within the container */
+    top: 50%; /* Position the content in the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    color: white; /* Example text color */
+    text-align: center; /* Center the text */
+    /* Add additional styling as needed */
+}
+
+/* Add responsive design adjustments and other stylings as needed */
+
 
 
 /* Header */
@@ -94,82 +124,8 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	opacity: 0.5;
 }
 /* Main Content sections */
-.mainContent .section1 {
-	display: block;
-}
-.section1 .sectionTitle, .section2 .sectionTitle {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
-	margin: 0 3% 0 0;
-	float: left;
-	clear: both;
-}
-.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
-	background-color: rgba(208,207,207,1.00);
-	height: 1px;
-	padding: 0px;
-}
-.mainContent .section1 .section1Content {
-	font-family: ProximaNova;
-	font-size: 14px;
-	font-weight: 100;
-	color: rgba(208,207,207,1.00);
-}
-.mainContent .section1 .section1Content span {
-	color: rgba(146,146,146,1.00);
-	font-family: sans-serif;
-}
-.section2 .sectionContentTitle {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 18px;
-	font-weight: 700;
-}
-.section2 .sectionContentSubTitle {
-	font-family: sans-serif;
-	color: rgba(68,67,67,1.00);
-	font-size: 14px;
-	font-weight: 400;
-}
-.section2 .sectionContent {
-	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8;
-}
 .mainContent {
-	display: block;
-}
-.mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(208,207,207,1.00);
-	display: inline-block;
-	text-align: center;
-	margin-top: 0px;
-	padding-top: 3%;
-	cursor: pointer;
-}
-.mainContent .externalResourcesNav .externalResources:hover {
 	background-color: rgba(153,153,153,1.00);
-}
-.externalResourcesNav .externalResources a {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(255,255,255,1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	text-decoration: none;
-}
-.stretch {
-	content: '';
-	display: inline-block;
-	margin-left: 2%;
-	margin-right: 2%;
 }
 /* Footer */
 footer .footerDisclaimer {
@@ -195,7 +151,7 @@ footer .footerNote span {
 	font-weight: 400;
 }
 
-/* Media query for Mobile devices*/
+/* Media query for Mobile devices
 @media only screen and (min-width : 285px) and (max-width : 480px) {
 /* Header */
 header {
@@ -272,7 +228,7 @@ footer {
 }
 }
 
-/* Media Query for Tablets */
+/* Media Query for Tablets
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
 /* Header */
 header {
@@ -352,6 +308,9 @@ footer .footerNote {
 }
 }
 
+*/
+
+
 /* Desktops and laptops  */
 @media only screen and (min-width:1025px) {
 /* Header */
@@ -373,37 +332,6 @@ header .socialNetworkNavBar .socialNetworkNav {
 	height: 74px;
 	display: inline-block;
 	margin-right: 23px;
-}
-/* Main content sections */
-.section1 .sectionTitleRule, .section2 .sectionTitleRule {
-	width: 22.5%;
-}
-.mainContent .section1 .section1Content {
-	display: block;
-	margin-top: 0%;
-	margin-right: 0%;
-	margin-left: 26%;
-	margin-bottom: 0%;
-	font-family: sans-serif;
-}
-.mainContent .section2 {
-	clear: both;
-}
-.section2 .section2Content {
-	padding: 0px;
-	margin-left: 26%;
-	font-family: sans-serif;
-}
-.mainContent .externalResourcesNav {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-	padding-top: 0px;
-	clear: both;
-}
-.mainContent .externalResourcesNav .externalResources {
-	width: 199px;
-	height: 48px;
 }
 /* Footer */
 footer .footerDisclaimer {
