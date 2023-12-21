@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Global Styles */
 
-header {
+header, footer {
 	margin-left: auto;
 	margin-right: auto;
 	width: 92%;
@@ -13,7 +13,7 @@ header {
 
 .social-media-button img {
 	height: 72px;
-    filter: grayscale(40%); /* Make the image black and white */
+    filter: grayscale(50%); /* Make the image black and white */
     transition: filter 0.3s ease; /* Smooth transition for the filter */
 }
 
@@ -27,31 +27,76 @@ header {
 	height: 260px;
 }
 
+#projects-label, #socials-label {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align-last: center;
+}
+
+
 .project-bar {
     background-size: cover; /* Cover ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
     position: relative; /* Allows absolute positioning of elements inside */
-    width: 100vw; /* Full width of the container */
+    width: 100vw; /* Full width of the container causes a scroll wheel on bottom, sadly */
     height: 500px; /* Adjust the height as needed */
+	
+    background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#compost {
-    background-image: url('../images/compost project/dutch.JPG'); /* Replace with your image path */
-}
-#tpi {
-    background-image: url('../images/tpi project/clean.png'); /* Replace with your image path */
+#compost {background-image: url('../images/compost project/dutch.JPG');}
+#tpi {background-image: url('../images/tpi project/clean.png');}
+#aita {background-image: url('../images/aita project/base.png');}
+#souls {background-image: url('../images/souls project/base.png');}
+
+.project-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    width: 27.2%; /* Adjust as needed */
+    background-color: #f0f0f0; /* Your chosen background color */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: adds depth */
+    /* Add more styling as needed */
 }
 
-.project-info {
-    position: absolute; /* Absolutely position the content within the container */
-    top: 50%; /* Position the content in the middle */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the content */
-    color: white; /* Example text color */
-    text-align: center; /* Center the text */
-    /* Add additional styling as needed */
+.project-content.right {right: 5%;}
+.project-content.left {left: 5%;}
+
+.project-content h2, .project-content p {
+    font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
 }
 
+.project-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust size as needed */
+    background-color: #007BFF; /* Your chosen button color */
+    color: white; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
+    border: none;
+    border-radius: 4px; /* Optional: for slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 5px; /* Space between buttons */
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    /* Additional hover styles */
+}
+
+
+
+
+a {
+	text-decoration: none;
+}
 /* Add responsive design adjustments and other stylings as needed */
 
 
@@ -111,7 +156,7 @@ header .profileHeader p {
 header .socialNetworkNavBar {
 	text-align: center;
 	display: block;
-	margin-top: 60px;
+	margin-top: 0px;
 	clear: both;
 }
 header .socialNetworkNavBar .socialNetworkNav {
@@ -165,6 +210,7 @@ header .profilePhoto {
 header .profileHeader {
 	text-align: center;
 	margin-top: 10%;
+	max-height: 400px;
 }
 header .profileHeader p {
 	text-align: justify;
@@ -305,8 +351,6 @@ footer .footerNote {
 	font-family: sans-serif;
 }
 }
-
-*/
 
 
 /* Desktops and laptops  */
