@@ -10,6 +10,11 @@ header, footer {
 	padding-right: 2.275%;
 }
 
+body {
+	margin: 0;
+    padding: 0;
+}
+
 
 .social-media-button img {
 	height: 72px;
@@ -41,7 +46,7 @@ header, footer {
     background-size: cover; /* Cover ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
     position: relative; /* Allows absolute positioning of elements inside */
-    width: 100vw; /* Full width of the container causes a scroll wheel on bottom, sadly */
+    /*width: calc(100vw - 15px);  17 is the approx. width of the vertical scrollbar */
     height: 500px; /* Adjust the height as needed */
 	
     background-repeat: no-repeat;

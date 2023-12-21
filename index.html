@@ -92,7 +92,16 @@
 <footer>
   <hr>
   <p class="footerDisclaimer">Copyright 2023 - <span>All Rights Reserved</span></p>
-  <p class="footerNote">Unique Viewer Count - <span>4</span></p>
+  <p class="footerNote">Josh Moore</p>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        var imageContainer = document.querySelector('.project-bar');
+        imageContainer.style.width = `calc(100vw - ${scrollbarWidth}px)`;
+    });
+</script>
+	
 </body>
 </html>
