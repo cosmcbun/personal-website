@@ -18,6 +18,7 @@ body {
 
 .social-media-button img {
 	height: 72px;
+	width: 72px;
     filter: grayscale(50%); /* Make the image black and white */
     transition: filter 0.3s ease; /* Smooth transition for the filter */
 }
@@ -69,8 +70,8 @@ body {
     /* Add more styling as needed */
 }
 
-.project-content.right {right: 5%;}
-.project-content.left {left: 5%;}
+.project-content.right {right: 3.5%;}
+.project-content.left {left: 3.5%;}
 
 .project-content h2, .project-content p {
     font-family: 'Montserrat', sans-serif;
@@ -162,10 +163,10 @@ header .socialNetworkNavBar {
 	text-align: center;
 	display: block;
 	margin-top: 0px;
+	margin-bottom: 30px;
 	clear: both;
 }
 header .socialNetworkNavBar .socialNetworkNav {
-	border-radius: 50%;
 	cursor: pointer;
 }
 header .socialNetworkNavBar .socialNetworkNav img:hover {
@@ -223,9 +224,7 @@ header .profileHeader p {
 header .socialNetworkNavBar {
 	text-align: center;
 	display: block;
-	margin-top: 60px;
 	clear: both;
-	margin-bottom: 15%;
 }
 header .socialNetworkNavBar .socialNetworkNav {
 	width: 60px;
