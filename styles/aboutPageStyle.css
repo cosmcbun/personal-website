@@ -47,7 +47,6 @@ body {
     background-size: cover; /* Cover ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
     position: relative; /* Allows absolute positioning of elements inside */
-    /*width: calc(100vw - 15px);  17 is the approx. width of the vertical scrollbar */
     height: 500px; /* Adjust the height as needed */
 	
     background-repeat: no-repeat;
@@ -63,13 +62,12 @@ body {
     position: absolute;
     top: 50%; /* Center vertically */
     transform: translateY(-50%);
-    width: 27.2%; /* Adjust as needed */
+    width: min(390px, 83%); /* Adjust as needed */
     background-color: #f0f0f0; /* Your chosen background color */
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: adds depth */
     /* Add more styling as needed */
 }
-
 .project-content.right {right: 3.5%;}
 .project-content.left {left: 3.5%;}
 
@@ -100,9 +98,7 @@ body {
 
 
 
-a {
-	text-decoration: none;
-}
+a {text-decoration: none;}
 /* Add responsive design adjustments and other stylings as needed */
 
 
