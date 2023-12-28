@@ -5,7 +5,7 @@ header, footer {
 	margin-left: auto;
 	margin-right: auto;
 	width: 92%;
-	max-width: 960px;
+	max-width: min(960px, 100%);
 	padding-left: 2.275%;
 	padding-right: 2.275%;
 }
@@ -196,7 +196,7 @@ footer .footerNote span {
 	font-weight: 400;
 }
 
-/* Media query for Mobile devices
+/* Media query for Mobile devices */
 @media only screen and (min-width : 285px) and (max-width : 480px) {
 /* Header */
 header {
@@ -207,6 +207,7 @@ header .profileLogo .logoPlaceholder {
 	display: inline-block;
 }
 header .profilePhoto {
+	margin-top: 10%;
 	display: inline-block;
 }
 header .profileHeader {
@@ -272,7 +273,7 @@ footer {
 }
 }
 
-/* Media Query for Tablets
+/* Media Query for Tablets */
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
 /* Header */
 header {
@@ -284,15 +285,20 @@ header .profileLogo .logoPlaceholder {
 	font-family: 'Montserrat', sans-serif;
 }
 header .profilePhoto {
-	float: left;
 	clear: both;
-	margin-right: 3%;
-	margin-top: 5%;
+	float: left;
+    margin-right: 3%; /* Adjust the right margin as needed */
+    margin-top: 3%;  /* Slightly less top margin for smaller screens */
 }
 header .profileHeader {
 	text-align: left;
-	margin-top: 7%;
+    margin-left: 2%; /* Optional: Add some space between the photo and header */
+    padding-top: 3%; /* Adjust the top padding to better align with the photo */
 }
+header .profileHeader hr {
+	clear: both;
+}
+	
 header .socialNetworkNavBar .socialNetworkNav {
 	width: 74px;
 	height: 74px;
@@ -352,8 +358,7 @@ footer .footerNote {
 }
 }
 
-
-/* Desktops and laptops  */
+/* Desktops and laptops */
 @media only screen and (min-width:1025px) {
 /* Header */
 header .profileLogo .logoPlaceholder {
@@ -361,14 +366,20 @@ header .profileLogo .logoPlaceholder {
 	margin-bottom: 50px;
 }
 header .profilePhoto {
-	float: left;
 	clear: both;
-	margin-right: 3%;
+    float: left;
+    margin-right: 3%; /* Adjust the right margin as needed */
+    margin-top: 5%;  /* Adjust the top margin to align with the header */
 }
 header .profileHeader {
 	text-align: left;
-	padding-top: 10%;
+    margin-left: 2%; /* Optional: Add some space between the photo and header */
+    padding-top: 5%; /* Adjust the top padding to align with the photo */
 }
+	
+	
+	
+	
 header .socialNetworkNavBar .socialNetworkNav {
 	width: 74px;
 	height: 74px;
